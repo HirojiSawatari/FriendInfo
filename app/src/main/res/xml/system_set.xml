@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory 
+        android:title="隐私">
+        <CheckBoxPreference 
+            android:title="允许陌生人获取个人信息"
+            android:key="getinfo"
+            android:summary="允许非好友用户通过查询短密码获取个人信息"
+            android:defaultValue="true" />  
+        <CheckBoxPreference 
+            android:title="自动推送"
+            android:key="auto" 
+            android:summary="个人信息修改时自动推送修改信息给好友"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="信息推送"> 
+        <CheckBoxPreference 
+            android:title="开启/关闭信息推送"
+            android:key="client"
+            android:summary="开启或关闭好友信息修改等推送功能"
+            android:defaultValue="true" />    
+    </PreferenceCategory>
+    
+</PreferenceScreen>

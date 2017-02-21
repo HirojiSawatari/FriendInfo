@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_passport"
+            android:icon="@drawable/ic_menu_passport"
+            android:title="密码查询" />
+        <item
+            android:id="@+id/nav_friend"
+            android:icon="@drawable/ic_menu_friend"
+            android:title="好友列表" />
+    </group>
+
+    <item android:title="共享">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="分享本人信息" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="共享本APP" />
+        </menu>
+    </item>
+
+    <item android:title="其他">
+        <menu>
+            <item
+                android:id="@+id/nav_change"
+                android:icon="@drawable/ic_menu_change"
+                android:title="切换用户" />
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_menu_setting"
+                android:title="设置" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_about"
+                android:title="关于" />
+        </menu>
+    </item>
+
+</menu>

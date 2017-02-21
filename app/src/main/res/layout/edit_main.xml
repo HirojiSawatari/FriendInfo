@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="edu.njnu.friendinfo.EditInfo"
+    tools:showIn="@layout/edit_info">
+
+    <ScrollView
+        android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical"
+        android:background="@color/info_panel_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <edu.njnu.friendinfo.widget.ClearEditText
+                android:id="@+id/cell1"
+                android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"
+                android:background="@drawable/login_edittext_bg"
+                android:drawableLeft="@drawable/cellphone_icon"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:singleLine="true"
+                android:drawableRight="@drawable/delete_selector"
+                android:hint="手机号码1"
+                android:layout_height="50dip" >
+            </edu.njnu.friendinfo.widget.ClearEditText>
+
+            <edu.njnu.friendinfo.widget.ClearEditText
+                android:id="@+id/cell2"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:drawableLeft="@drawable/cellphone_icon"
+                android:hint="手机号码2"
+                android:singleLine="true"
+                android:drawableRight="@drawable/delete_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@id/cell1"
+                android:background="@drawable/login_edittext_bg" >
+            </edu.njnu.friendinfo.widget.ClearEditText>
+
+            <edu.njnu.friendinfo.widget.ClearEditText
+                android:id="@+id/cell3"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:drawableLeft="@drawable/cellphone_icon"
+                android:hint="手机号码3"
+                android:singleLine="true"
+                android:drawableRight="@drawable/delete_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@id/cell2"
+                android:background="@drawable/login_edittext_bg" >
+            </edu.njnu.friendinfo.widget.ClearEditText>
+
+            <edu.njnu.friendinfo.widget.ClearEditText
+                android:id="@+id/phone"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:drawableLeft="@drawable/phone_icon"
+                android:hint="固定电话号码"
+                android:singleLine="true"
+                android:drawableRight="@drawable/delete_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@id/cell3"
+                android:background="@drawable/login_edittext_bg" >
+            </edu.njnu.friendinfo.widget.ClearEditText>
+
+            <edu.njnu.friendinfo.widget.ClearEditText
+                android:id="@+id/qq"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:drawableLeft="@drawable/qq_icon"
+                android:hint="QQ号码"
+                android:singleLine="true"
+                android:drawableRight="@drawable/delete_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@id/phone"
+                android:background="@drawable/login_edittext_bg" >
+            </edu.njnu.friendinfo.widget.ClearEditText>
+
+            <edu.njnu.friendinfo.widget.ClearEditText
+                android:id="@+id/wechat"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:drawableLeft="@drawable/wechat_icon"
+                android:hint="微信号"
+                android:singleLine="true"
+                android:drawableRight="@drawable/delete_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@id/qq"
+                android:background="@drawable/login_edittext_bg" >
+            </edu.njnu.friendinfo.widget.ClearEditText>
+
+            <edu.njnu.friendinfo.widget.ClearEditText
+                android:id="@+id/weibo"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:drawableLeft="@drawable/weibo_icon"
+                android:hint="微博"
+                android:singleLine="true"
+                android:drawableRight="@drawable/delete_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@id/wechat"
+                android:background="@drawable/login_edittext_bg" >
+            </edu.njnu.friendinfo.widget.ClearEditText>
+
+            <edu.njnu.friendinfo.widget.ClearEditText
+                android:id="@+id/email"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:drawableLeft="@drawable/email_icon"
+                android:hint="电子邮箱"
+                android:singleLine="true"
+                android:drawableRight="@drawable/delete_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@id/weibo"
+                android:background="@drawable/login_edittext_bg" >
+            </edu.njnu.friendinfo.widget.ClearEditText>
+
+            <edu.njnu.friendinfo.widget.ClearEditText
+                android:id="@+id/page"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:drawableLeft="@drawable/page_icon"
+                android:hint="个人主页"
+                android:singleLine="true"
+                android:drawableRight="@drawable/delete_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@id/email"
+                android:background="@drawable/login_edittext_bg" >
+            </edu.njnu.friendinfo.widget.ClearEditText>
+
+            <View
+                android:id="@+id/passline"
+                android:layout_height="2px"
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dip"
+                android:background="#515151"
+                android:layout_below="@id/page" />
+
+            <edu.njnu.friendinfo.widget.ClearEditText
+                android:id="@+id/name"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="30dip"
+                android:drawableLeft="@drawable/name_icon"
+                android:hint="用户名"
+                android:singleLine="true"
+                android:drawableRight="@drawable/delete_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@id/passline"
+                android:background="@drawable/login_edittext_bg" >
+            </edu.njnu.friendinfo.widget.ClearEditText>
+
+            <edu.njnu.friendinfo.widget.ClearEditText
+                android:id="@+id/password"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:drawableLeft="@drawable/pass_icon"
+                android:hint="登录密码"
+                android:singleLine="true"
+                android:password="true"
+                android:drawableRight="@drawable/delete_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@id/name"
+                android:background="@drawable/login_edittext_bg" >
+            </edu.njnu.friendinfo.widget.ClearEditText>
+
+            <edu.njnu.friendinfo.widget.ClearEditText
+                android:id="@+id/searchpass"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:drawableLeft="@drawable/searchpass_icon"
+                android:hint="查询短密码"
+                android:singleLine="true"
+                android:drawableRight="@drawable/delete_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@id/password"
+                android:background="@drawable/login_edittext_bg" >
+            </edu.njnu.friendinfo.widget.ClearEditText>
+
+            <edu.njnu.friendinfo.widget.ClearEditText
+                android:id="@+id/sign"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:drawableLeft="@drawable/sign_icon"
+                android:hint="签名"
+                android:singleLine="true"
+                android:drawableRight="@drawable/delete_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@id/searchpass"
+                android:background="@drawable/login_edittext_bg" >
+            </edu.njnu.friendinfo.widget.ClearEditText>
+
+            <Button
+                android:id="@+id/okButton"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="20dip"
+                android:layout_marginBottom="40dip"
+                android:background="@drawable/exit_button"
+                android:layout_below="@id/sign"
+                android:text="确认"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
